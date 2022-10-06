@@ -1,0 +1,137 @@
+.container {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 4%;
+    border-bottom: 1px solid silver;
+    font-size: 100%;
+}
+
+.container:last-child {
+    border: none;
+}
+
+.logoContainer {
+    width: 10%;
+    margin-left: -2%;
+}
+.image {
+    width: 100%;
+}
+
+.namePrice{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nameContainer {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.name {
+    font-size: 95%;
+    width: 50%;
+    font-weight: bold;
+    text-align: left;
+    color: #333333;
+    margin-left: 5%;
+}
+
+.symbol {
+    text-align: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+.priceContainer {
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.greenPrice,
+.redPrice {
+    width: 40%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.greenPrice {
+    color: rgb(0, 204, 0);
+}
+
+.redPrice {
+    color: red;
+}
+
+.price {
+    width: 60%;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 5%;
+}
+
+.marketCap {
+    width: 25%;
+    text-align: left;
+}
+
+@media (max-width:600px) {
+    .container {
+        margin-bottom: 5%;
+        border: none;
+    }
+    .logoContainer {
+        width: 30%;
+        margin: 0;
+    }
+    .namePrice {
+        width: 60%;
+        margin-left: 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .nameContainer {
+        width: 100%;
+        font-size: 110%;
+        margin-bottom: 10%;
+    }
+    .symbol {
+        font-size: 100%;
+    }
+    .nameContainer::after {
+        content: '';
+        border-bottom: 1px solid black;
+        position: absolute;
+        width: 40%;
+        margin-top: 10%;
+    }
+    .priceContainer {
+        width: 100%;
+        font-size: 100%;
+        margin-bottom: 10%;
+    }
+    .priceContainer::after {
+        content: '';
+        border-bottom: 1px solid black;
+        position: absolute;
+        width: 40%;
+        margin-top: 10%;
+    }
+    .price {
+        margin: 0;
+    }
+    .name {
+        margin: 0;
+    }
+    .marketCap {
+        width: 100%;
+        font-size: 100%;
+    }
+}
