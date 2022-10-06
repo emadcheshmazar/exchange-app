@@ -3,6 +3,8 @@
 crypto live table: This application displays information about hundreds of crypto currencies, including price, price changes and marketcap
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## live demo: https://regal-flan-165b89.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
